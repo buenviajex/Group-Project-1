@@ -8,11 +8,11 @@ Project Title: SocialSeek
 
 Team Members: Lifan, Mark, Matt, and Cyrus
 
-Project: We are creating a web application that upon entering the user can input a person of interest’s name into the search bar and the results returned will provide recent social media posts from IMDB, IN THE NEWS, STATS, & Wikipedia. 
+Project: We are creating a web application that upon entering the user can input a person of interest’s name into the search bar and the results returned will provide relevant information about the person searched from IMDB, IN THE NEWS, STATS, & Wikipedia. 
 
 Functionality:
--	search for anyone
--	display results
+-	search for celebrity with API.
+-	display results in seperate divs
 -	Display an image of the person (if possible)
 -	Basic wiki bio
 -	In the News (google news)
@@ -26,7 +26,7 @@ Hopeful functionality:
 -	twitter ticker with tweets that involve the input
 -	SOCIAL MEDIA integrations (fb, insta, twitter, youtube, twitch)
 
-API’s we want to use:
+API’s we wish we could use:
 -	facebook
 -	Instagram
 -	Wikipedia
@@ -49,4 +49,3 @@ b.	search bar json
 c.	search button json
 d.	ajax call for api’s
 e.	display results with jquery into rows/columns
-
