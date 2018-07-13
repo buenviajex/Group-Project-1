@@ -6,3 +6,12 @@ var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api
   authKey + "&q=";
 var articleCounter = 0;
 
+//searchbar function to obtain articles from user input into the search bar.
+$("#searchBar").on("click", function (event) {
+  event.preventDefault();
+  articleCounter = 0;
+  $("#theNews").empty();
+  searchTerm = $("#searchBar").val().trim();
+  var queryURL = queryURLBase + searchTerm;
+  runQuery(numResults, queryURL);
+});
