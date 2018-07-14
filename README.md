@@ -4,9 +4,7 @@ This is the first group project! As a group we are going to code the heck out of
 
 Group Project Proposal
 
-Project Title: SocialSeek
-
-Team Members: Lifan, Mark, Matt, and Cyrus
+Project Title: Seeker
 
 Project: We are creating a web application that upon entering the user can input a person of interest’s name into the search bar and the results returned will provide relevant information about the person searched from IMDB, IN THE NEWS, STATS, & Wikipedia. 
 
