@@ -37,3 +37,7 @@ width: 100%;
 #icon_prefix:focus + label {
   color: mediumblue
 }
+
+.addimgmarg {
+  margin-left: 10%
+}

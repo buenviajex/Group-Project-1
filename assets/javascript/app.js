@@ -40,13 +40,13 @@ $(".searchButton").on("click", function(event) {
  
 $(".searchButton").click(function(){
     $(".mainlogo").removeClass("center-align");
-    $(".mainlogo").addClass("left s6");
+    $(".mainlogo").addClass("left s6 addimgmarg");
     $(".logoimage").animate({
         height: '125px',
-        width: '400px'
+        width: '400px',
     });
     $("#searchBar").removeClass("s12");
-    $("#searchBar").addClass("searchBar s6");
+    $("#searchBar").addClass("searchBar right s12 m6");
     $("#searchBar").animate({
         size: '50%',
     });
