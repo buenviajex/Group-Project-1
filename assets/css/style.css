@@ -12,3 +12,32 @@ width: 100%;
 #footLinks {
   padding: 10px;
 }
+
+.imgdiv {
+  display: inline-block;
+  margin: 10px
+}
+.logoimage {
+  height: 300px;
+}
+
+.searchBar {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.input-field .prefix.active {
+  color: mediumblue;
+}
+
+#icon_prefix:focus {
+  border-bottom: 1px solid mediumblue;
+  box-shadow: 0 1px 0 0 mediumblue;
+}
+#icon_prefix:focus + label {
+  color: mediumblue
+}
+
+.addimgmarg {
+  margin-left: 10%
+}

@@ -22,21 +22,22 @@
         <!--SEEKER Main Logo -->
         <div class="mainlogo center-align">
                 <a href="index.html">
-                        <img src="assets/Images/logoside.JPG" style="height:300px">
+                    <!-- FYI to everyone, images must be lower cased for github to show it -->
+                        <img src="assets/images/logo.JPG" class="logoimage responsive-img">
                       </a>
         </div>
         
         <!--Search Bar!-->
         <div class="row container">
-            <form class="col s12">
+
                 <div class="row">
                     <div class="input-field col s12" id="searchBar">
                         <i class="material-icons prefix">search</i>
-                        <input id="icon_prefix" type="text" class="validate">
+                        <input id="icon_prefix" type="text" class="validate searchInput">
                         <label for="icon_prefix">Who Do You Seek?</label>
                         <!--Submit Button-->
                         <div class="center-align">
-                            <button class="btn waves-effect waves-light red darken-2" type="submit" name="action">Submit
+                            <button class="btn waves-effect waves-light red darken-2 searchButton" type="submit" name="action">Submit
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -56,8 +57,8 @@
                 </div>
                 <div class="divider"></div>
                 <div class="section" id="googleImage">
-                    <h5>Section 2</h5>
-                    <p>Stuff</p>
+                    <div id="imgHeader">Section 2</div>
+                    <div id="googleImages"></div>
                 </div>
                 <div class="divider"></div>
                 <div class="section">
@@ -86,6 +87,7 @@
                 </div>
                 
                 <div class= "col s4 center-align">
+                    <br>
                     <a id= "footLinks" class="grey-text text-lighten-4" href="https://github.com/buenviajex/Group-Project-1">© 2018 Copyright Code Monkey Enterprises</a>
                 </div>
                 
