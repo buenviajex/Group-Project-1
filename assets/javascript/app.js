@@ -1,16 +1,17 @@
-// $("#searchBar").on("click", function(event) {
-//     event.preventDefault();
-//     var searchbar= $("#searchBar").val().trim();
-//     var queryURL = "https://cors-anywhere.herokuapp.com/https://www.google.com/search?tbm=isch&q=" + searchBar + "";
-//     $.ajax({
-//       url: queryURL,
-//       method: "GET",
-//       headers: {
-//       },
-//     }).then(function(response) {
-//     });
-//   });
-//   function(response) {
+$(".searchButton").on("click", function(event) {
+    event.preventDefault();
+    var searchValue= $("#searchInput").val().trim();
+    var queryURL = https://cors-anywhere.herokuapp.com/https://www.google.com/search?tbm=isch&q=" + searchInput + "";
+
+    $.ajax({
+        url: queryURL,
+        method: "GET",
+    }).then(function(response) {
+        console.log(response);
+    });
+});
+ 
+// function(response) {
 //       addNewRow(response.data);
 //   });
 // });
