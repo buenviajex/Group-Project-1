@@ -13,12 +13,16 @@ width: 100%;
   padding: 10px;
 }
 
+.imgdiv {
+  display: inline-block;
+  margin: 10px
+}
 .logoimage {
   height: 300px;
 }
 
 .searchBar {
-  margin-top: 100px;
+  margin-top: 30px;
   padding-top: 20px;
 }
 
