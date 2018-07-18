@@ -13,3 +13,11 @@ width: 100%;
   padding: 10px;
 }
 
+.logoimage {
+  height: 300px;
+}
+
+.searchBar {
+  margin-top: 100px;
+  padding-top: 20px;
+}
