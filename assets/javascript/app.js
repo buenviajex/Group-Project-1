@@ -42,7 +42,7 @@ $(".searchButton").click(function(){
     $(".mainlogo").removeClass("center-align");
     $(".mainlogo").addClass("left s6");
     $(".logoimage").animate({
-        height: '100px',
+        height: '125px',
         width: '400px'
     });
     $("#searchBar").removeClass("s12");
