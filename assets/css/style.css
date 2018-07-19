@@ -27,7 +27,7 @@ width: 100%;
 }
 
 .input-field .prefix.active {
-  color: mediumblue;
+  color: white;
 }
 
 #icon_prefix:focus {
@@ -35,9 +35,10 @@ width: 100%;
   box-shadow: 0 1px 0 0 mediumblue;
 }
 #icon_prefix:focus + label {
-  color: mediumblue
+  color: white
 }
 
 .addimgmarg {
   margin-left: 10%
 }
+
