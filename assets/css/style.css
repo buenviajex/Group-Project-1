@@ -27,15 +27,19 @@ width: 100%;
 }
 
 .input-field .prefix.active {
-  color: white;
+  color: orangered;
 }
 
 #icon_prefix:focus {
-  border-bottom: 1px solid mediumblue;
-  box-shadow: 0 1px 0 0 mediumblue;
+  border-bottom: 1px solid orangered;
+  box-shadow: 0 1px 0 0 orangered;
 }
 #icon_prefix:focus + label {
-  color: white
+  color: orangered
+}
+
+.input-field {
+  color:white
 }
 
 .addimgmarg {
