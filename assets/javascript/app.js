@@ -34,8 +34,21 @@ $(".searchButton").on("click", function(event) {
          url: NYTqueryURL,
          method: "GET",
      }).then(function(response) {
-         console.log(response);
+         console.log(response.response.docs);
+         $("#theNews").empty()
+         for (var i = 0; i<response.response.docs.length; i++) {
+             var newsdiv = $("<div class='newsdiv'>")
+             var newslink = $("<a>")
+             newsdiv.append(newslink)
+             newslink.attr("href", response.response.docs[i].web_url)
+             newslink.attr("target", "_blank")
+             newslink.html(response.response.docs[i].headline.main)
+             $('#theNews').append(newsdiv)
+         }
      });
+
+    
+    
  });
  
 $(".searchButton").click(function(){
@@ -54,16 +67,3 @@ $(".searchButton").click(function(){
     // jquery helper to run event.preventDefault() for you;
     return false;
 });
-
-
-// function(response) {
-//       addNewRow(response.data);
-//   });
-// });
-// function addNewRow (data) {
-//   var img = data[0].image;
-//   var newRow = $("<tr>").prepend(
-//     $("<#googleImage>").text(data),
-//   );
-//   $("#googleImage").prepend(newRow);
-// }
