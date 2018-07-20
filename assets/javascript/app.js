@@ -46,9 +46,6 @@ $(".searchButton").on("click", function(event) {
              $('#theNews').append(newsdiv)
          }
      });
-
-    
-    
  });
  
 $(".searchButton").click(function(){
