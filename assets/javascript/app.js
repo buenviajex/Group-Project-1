@@ -10,6 +10,10 @@ $(".searchButton").on("click", function(event) {
         console.log(response);
 
     $("#googleImages").empty()
+    var imgHeader = $("<h3 class='imgHeader'>").text("Pictures")
+    var imgDivider = $("<div class='divider'>")
+    $('#googleImages').prepend(imgHeader, imgDivider)
+
     for (var i = 0; i<response.items.length; i++) {
         var imgdiv = $("<div class='imgdiv'>")
         var imglink = $("<a>")
@@ -35,10 +39,12 @@ $(".searchButton").on("click", function(event) {
          method: "GET",
      }).then(function(response) {
          console.log(response.response.docs);
+
          $("#theNews").empty()
          var newsHeader = $("<h3 class='newsHeader'>").text("In the News")
          var newsDivider = $("<div class='divider'>")
          $('#theNews').prepend(newsHeader, newsDivider)
+
          for (var i = 0; i<response.response.docs.length; i++) {
              var newsdiv = $("<div class='newsdiv'>")
              var newslink = $("<a>")
@@ -56,10 +62,19 @@ $(".searchButton").on("click", function(event) {
         url : "https://www.googleapis.com/youtube/v3/search?part=snippet&topicId=%2Fm%2F05z1_&type=video&key=" + ytAPIkey + "&q=" + searchValue,
         dataType: "jsonp",
         success: function(data) {
-            console.log(data)
-            for (var i = 0; i<data.items.length;i++) {
+        console.log(data)
+        
+        $('#ytContent').empty()
+        var ytHeader = $("<h3 class='ytHeader'>").text("Videos")
+        var ytDivider = $("<div class='divider'>")
+        $('#ytContent').prepend(ytHeader, ytDivider)
+
+          for (var i = 0; i<data.items.length;i++) {
             var vidiv = $("<div class='vidiv'>")
             var vidlink = $("<a>")
+            var vidheader = $("<p class='vidheader'>")
+            vidheader.text(data.items[i].snippet.title)
+            vidlink.prepend(vidheader)
             vidiv.append(vidlink)
             vidlink.attr("href", preYTurl + data.items[i].id.videoId)
             vidlink.attr("target", "_blank")
