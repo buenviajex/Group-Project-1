@@ -57,7 +57,18 @@ $(".searchButton").on("click", function(event) {
         dataType: "jsonp",
         success: function(data) {
             console.log(data)
-            
+            for (var i = 0; i<data.items.length;i++) {
+            var vidiv = $("<div class='vidiv'>")
+            var vidlink = $("<a>")
+            vidiv.append(vidlink)
+            vidlink.attr("href", preYTurl + data.items[i].id.videoId)
+            vidlink.attr("target", "_blank")
+            $("#ytContent").append(vidiv)
+
+            var vidthumb = $("<img>")
+            vidthumb.attr("src", data.items[i].snippet.thumbnails.medium.url)
+            vidlink.append(vidthumb)
+          }
         }
     });
 
