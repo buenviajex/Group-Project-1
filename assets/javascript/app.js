@@ -3,12 +3,13 @@ $(".searchButton").on("click", function(event) {
     var searchValue= $(".searchInput").val().trim();
     var GIapi = "AIzaSyBFF-Z0wLlFirA44q-R_Yfg5Y_d59Ks9xY"
     var GIqueryURL = "https://www.googleapis.com/customsearch/v1?searchType=image&key=" + GIapi + "&cx=003281430856125788303:ccpcjlqp7kq&q=" + searchValue;
+    if (searchValue ==!"") {
     $.ajax({
         url: GIqueryURL,
         method: "GET",
     }).then(function(response) {
         console.log(response);
-    
+
     $("#googleImages").empty()
     for (var i = 0; i<response.items.length; i++) {
         var imgdiv = $("<div class='imgdiv'>")
@@ -49,9 +50,11 @@ $(".searchButton").on("click", function(event) {
              $('#theNews').append(newsdiv)
          }
      });
+    }
  });
  
 $(".searchButton").click(function(){
+    if (searchValue="") {
     $(".mainlogo").removeClass("center-align");
     $(".mainlogo").addClass("left s6 addimgmarg");
     $(".logoimage").animate({
@@ -66,4 +69,5 @@ $(".searchButton").click(function(){
 
     // jquery helper to run event.preventDefault() for you;
     return false;
+    }
 });
