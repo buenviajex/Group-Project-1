@@ -1,7 +1,7 @@
 $(".searchButton").on("click", function(event) {
     event.preventDefault();
     var searchValue= $(".searchInput").val().trim();
-    var GIapi = "AIzaSyBFF-Z0wLlFirA44q-R_Yfg5Y_d59Ks9xY"
+    var GIapi = "AIzaSyD7Wc63TRgw3TeJBIFVDSezSZKFc8i43ro"
     var GIqueryURL = "https://www.googleapis.com/customsearch/v1?searchType=image&key=" + GIapi + "&cx=003281430856125788303:ccpcjlqp7kq&q=" + searchValue;
     $.ajax({
         url: GIqueryURL,
@@ -49,6 +49,7 @@ $(".searchButton").on("click", function(event) {
              $('#theNews').append(newsdiv)
          }
      });
+
  });
  
 $(".searchButton").click(function(){
