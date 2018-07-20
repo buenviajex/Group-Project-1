@@ -36,6 +36,9 @@ $(".searchButton").on("click", function(event) {
      }).then(function(response) {
          console.log(response.response.docs);
          $("#theNews").empty()
+         var newsHeader = $("<h3 class='newsHeader'>").text("In the News")
+         var newsDivider = $("<div class='divider'>")
+         $('#theNews').prepend(newsHeader, newsDivider)
          for (var i = 0; i<response.response.docs.length; i++) {
              var newsdiv = $("<div class='newsdiv'>")
              var newslink = $("<a>")
