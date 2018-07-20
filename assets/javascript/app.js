@@ -49,6 +49,17 @@ $(".searchButton").on("click", function(event) {
              $('#theNews').append(newsdiv)
          }
      });
+     var ytAPIkey = "AIzaSyBFF-Z0wLlFirA44q-R_Yfg5Y_d59Ks9xY"
+     var preYTurl = "https://www.youtube.com/watch?v="
+     $.ajax({
+        //url: "https://www.googleapis.com/youtube/v3/videos?id=&type=video&part=snippet" + "&topicId="  + searchValue + '&key=' + ytAPIkey + "&?v=2&alt=json"
+        url : "https://www.googleapis.com/youtube/v3/search?part=snippet&topicId=%2Fm%2F05z1_&type=video&key=" + ytAPIkey + "&q=" + searchValue,
+        dataType: "jsonp",
+        success: function(data) {
+            console.log(data)
+            
+        }
+    });
 
  });
  
