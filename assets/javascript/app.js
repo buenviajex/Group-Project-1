@@ -37,7 +37,7 @@ $(".searchButton").on("click", function(event) {
          console.log(response);
      });
  });
- 
+//  Here is the on click of submit button the logo and search bar and button will moveeeeee!
 $(".searchButton").click(function(){
     $(".mainlogo").removeClass("center-align");
     $(".mainlogo").addClass("left s6");
@@ -50,7 +50,7 @@ $(".searchButton").click(function(){
     $("#searchBar").animate({
         size: '50%',
     });
-
+    $(".searchButton").addClass("right");
     // jquery helper to run event.preventDefault() for you;
     return false;
 });
