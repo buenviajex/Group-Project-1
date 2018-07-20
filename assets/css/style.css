@@ -52,6 +52,19 @@ width: 100%;
   padding: 10px;
 }
 
-.newsHeader {
+.newsHeader, .imgHeader, .ytHeader {
   margin-top: 0;
+  margin-left: 10px;
+}
+
+.vidiv {
+  display: inline-block;
+  margin: 10px;
+  max-width: 320px;
+}
+
+.vidheader {
+  text-align: center;
+  padding:10px;
+  color: mediumblue
 }
